@@ -1,1 +1,4 @@
 # myportfolio
+HTML
+CSS
+JS
