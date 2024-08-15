@@ -1,0 +1,314 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-color: #000000;
+    color: #fff; 
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #9c9c9c; /* Black navigation background */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+a:hover{
+    color: rgb(219, 219, 219);
+}
+nav ul li a {
+    color: rgb(79, 74, 74);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s, background 0.3s;
+}
+
+nav ul li a:hover {
+    color: #1e90ff; /* Light blue on hover */
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Image Container Styles */
+.image {
+    width: 200px; 
+    height: 200px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; 
+    position: relative;
+    border: 2px solid #87CEEB; 
+    box-shadow: 0 0 15px rgba(135, 206, 235, 0.6);
+    animation: flipFromBottom 0.3s ease-out; 
+margin-left: 485px;}
+
+/* Image Styles */
+.profile-image {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ .write:hover{
+    color: #333;
+ }
+
+@keyframes flipFromBottom {
+    0% {
+        transform: rotateX(90deg) translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: rotateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+.write{
+font-family: 'Times New Roman', Times, serif;
+font-size: 1.5rem;
+}
+.section {
+    padding: 50px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    transition: background-color 0.3s;
+    background-color: #000; /* Black background for sections */
+}
+
+.section:hover {
+    background-color: #000; /* Darker background on hover */
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+body{
+    background: #000;
+}
+.section h2 {
+    font-size: 2.5em;
+    color: #fff; /* White headings */
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.section h2:hover {
+    color: #4f565e; /* Light blue on hover */
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #333; /* Darker content background */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Increased shadow */
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+.content .text {
+    text-align: left;
+}
+
+.content .text p {
+    font-size: 1.2em;
+    color: #ccc; /* Light gray text */
+    transition: color 0.3s;
+}
+
+.content .text p:hover {
+    color: #000000; /* White text on hover */
+}
+
+
+/* Skill Bar */
+.skill-bar {
+    width: 100%;
+}
+
+.skill {
+    margin: 20px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.skill-name {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.skill-level {
+    height: 20px;
+    background-color: #000; /* Light blue */
+    border-radius: 10px;
+    position: relative;
+}
+
+.skill-level::after {
+    content: '';
+    display: block;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(197, 204, 211, 0.4); /* Semi-transparent light blue */
+    transition: width 0.5s;
+}
+
+.skill:hover .skill-level::after {
+    width: 100%;
+}
+.education1, .education2 , .education3{
+    margin-bottom: 20px;
+    background-color: #444; /* Slightly lighter background for items */
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.education1:hover, .education2:hover ,.education3:hover{
+    background-color: #000; /* Slightly lighter background on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+.education1 h3, .education2 h3,.education3 h3 {
+    color: #e6e7e9; /* Light blue text */
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.education1 h4, .education2 h4 ,.education3 h4{
+    color: #ccc; /* Light gray text */
+    margin-bottom: 10px;
+}
+
+.education1 p, .education2 p ,.education3 p{
+    color: #ccc; /* Light gray text */
+    margin-bottom: 5px;
+}
+
+.projects1,.projects2,.projects3,.projects4{
+    margin-bottom: 20px;
+    background-color: #444; /* Slightly lighter background for items */
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.projects1:hover,.projects2:hover,.projects3:hover,.projects4:hover{
+    background-color: #000; /* Slightly lighter background on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Stronger shadow on hover */
+}
+
+.projects1 h3,.projects2 h3,.projects3 h3,.projects4 h3 {
+    color: #e6e7e9; /* Light blue text */
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.projects1 p,.projects2 p,.projects3 p,.projects4{
+    color: #ccc; /* Light gray text */
+    margin-bottom: 5px;
+}
+
+
+
+.contact-content {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff; /* White text color */
+}
+
+.contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc; /* Light gray text color */
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #828385; /* Light blue background color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.download-btn:hover {
+    background-color: #848a92; /* Darker blue on hover */
+    transform: translateY(-3px);
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff;
+    border-radius: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+
+}
+.contact:hover{
+    background-color: #000;
+}
